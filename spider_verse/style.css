@@ -1,0 +1,197 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Poppins", sans-serif;
+}
+
+body {
+background: linear-gradient(135deg, #0d1117, #1b2735);
+color: #f1f1f1;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-start;
+overflow-x: hidden;
+position: relative;
+}
+
+/* Background Overlay */
+.web-overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: url("./images/background.png") repeat center center;
+background-size: cover;
+z-index: -1;
+}
+
+/* Header Section */
+header {
+text-align: center;
+margin: 2rem 0 1.5rem;
+padding: 0 1rem;
+}
+
+header h1 {
+color: #33d4ff; 
+font-size: 2.3rem;
+text-shadow: 0 0 12px rgba(0, 198, 255, 0.9);
+margin-bottom: 0.5rem;
+}
+
+header p {
+color: #ddd;
+max-width: 700px;
+margin: 0 auto;
+font-size: 1rem;
+line-height: 1.6;
+}
+
+/* Main Section */
+.main-section {
+display: flex;
+justify-content: center;
+align-items: flex-start;
+gap: 3rem;
+flex-wrap: wrap;
+padding: 2rem 1rem;
+width: 100%;
+max-width: 1200px;
+}
+
+/* Left and Right Sides */
+.left-side {
+flex: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.spiderman-img {
+max-width: 500px;
+width: 100%;
+height: auto;
+border-radius: 15px;
+margin-left: 150px;
+margin-top: 50px;
+animation: float 4s ease-in-out infinite;
+transition: transform 0.3s ease;
+filter: drop-shadow(0px 20px 25px rgba(0, 0, 0, 0.6));
+}
+
+.spiderman-img:hover {
+transform: scale(1.05);
+}
+
+.right-side {
+flex: 1;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+}
+
+.container {
+background: rgba(255, 255, 255, 0.1);
+border-radius: 15px;
+padding: 1.8rem;
+width: 100%;
+max-width: 380px;
+box-shadow: 0 0 25px rgba(0, 198, 255, 0.3);
+text-align: center;
+backdrop-filter: blur(8px);
+}
+
+.container h2 {
+color: #33d4ff;
+margin-bottom: 0.5rem;
+}
+
+.container p {
+color: #d5d5d5;
+margin-bottom: 1.2rem;
+font-size: 0.95rem;
+}
+
+/* Draggable Items */
+.item {
+background: rgba(0, 198, 255, 0.18);
+border: 1px solid rgba(0, 198, 255, 0.5);
+padding: 1rem;
+border-radius: 10px;
+margin: 0.7rem 0;
+text-align: center;
+cursor: grab;
+user-select: none;
+transition: all 0.3s ease;
+color: #f3f3f3; 
+}
+
+.item:hover {
+background: rgba(0, 198, 255, 0.4);
+transform: scale(1.03);
+box-shadow: 0 0 12px rgba(0, 198, 255, 0.35);
+}
+.item.dragging {
+    opacity: 0.5;
+    background-color: #ff3b3b;
+  }
+  
+
+.dragging {
+opacity: 0.8;
+transform: scale(1.05);
+border: 2px dashed #33d4ff;
+box-shadow: 0 0 18px rgba(0, 198, 255, 0.6);
+}
+
+.footer {
+width: 100%;
+text-align: center;
+padding: 1rem;
+background: rgba(255, 255, 255, 0.07);
+border-top: 1px solid rgba(255, 255, 255, 0.12);
+color: #ddd;
+font-size: 0.9rem;
+margin-top: auto;
+}
+
+/* Animation (Up-Down Floating) */
+@keyframes float {
+0% {
+    transform: translateY(0);
+}
+50% {
+    transform: translateY(-15px);
+}
+100% {
+    transform: translateY(0);
+}
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+header h1 {
+    font-size: 1.8rem;
+}
+
+.main-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.spiderman-img {
+    max-width: 220px;
+    margin-left: 0;
+}
+
+.container {
+    max-width: 320px;
+}
+}
+
+

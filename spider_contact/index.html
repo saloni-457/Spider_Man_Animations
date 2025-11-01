@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spider-Fan Sign-Up | Form Validation</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+</head>
+<body>
+
+  <!-- Background overlay -->
+  <div class="web-overlay"></div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+        <div class="hero-image">
+        <img src="./images/spidey.png" alt="Spiderman" />
+      </div>
+      <div class="hero-text">
+        <h1>🕸️ Spider-Fan Sign-Up</h1>
+        <p>
+          Chef is opening the gates to the Spider-Verse fan club!  
+          Register below to prove you're a true web-slinger and join the multiverse adventure.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <h2>Join the Multiverse</h2>
+
+    <form id="signupForm" novalidate>
+      <!-- Full Name -->
+      <div class="form-group">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" placeholder="Enter your full name" required />
+        <small class="error-message"></small>
+      </div>
+    
+      <!-- Email -->
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" placeholder="Enter your email" required />
+        <small class="error-message"></small>
+      </div>
+    
+      <!-- Password -->
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password" required />
+        <small class="error-message"></small>
+      </div>
+    
+      <!-- Submit Button -->
+      <button type="submit" class="submit-btn">Join Now!</button>
+    </form>
+    
+    <!-- STEP 1: Create a <form> element -->
+    <!-- Use id="signupForm" and add the attribute "novalidate" -->
+    <!-- This form will contain multiple input groups -->
+
+    <!-- Inside the form: -->
+    <!-- STEP 2: Create a container for each input field -->
+    <!-- Each input group must be wrapped inside a <div> with class="form-group" -->
+
+    <!-- FORM GROUP 1: Name Field-->
+    <!-- 1 Add a label that clearly asks for the user's full name. -->
+    <!-- 2 Below it, include a text input where users can type their name.  
+           Make sure it has an id of "name" and a placeholder that hints what to enter -->
+    <!-- 3 Add a <small> tag with class="error-message" (keep empty for now) -->
+
+    <!-- FORM GROUP 2: Email Address -->
+    <!-- 1 Add a label that clearly asks for the user's email address. -->
+    <!-- 2 Below it, include a text input where users can type their email address.  
+           Make sure it has an id of "email" and a placeholder that hints what to enter -->
+    <!-- 3 Add <small class="error-message"></small> below input -->
+
+    <!-- FORM GROUP 3: Password -->
+    <!-- 1 Add a label that clearly asks for the user's password. -->
+    <!-- 2 Below it, include a text input where users can type their email address.  
+           Make sure it has an id of "password" and a placeholder that hints what to enter -->
+    <!-- 3 Add <small class="error-message"></small> below input -->
+
+    <!-- STEP 3: After all form groups, create a submit button -->
+     <!-- Give it a class like "submit-btn" and label it “Join Now”. -->
+
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Spider-Fan Portal | Crafted by Chef 🕷️</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+

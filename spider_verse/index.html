@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🕸️ Spider-Verse Mission Organizer | Drag & Drop</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+</head>
+<body>
+
+  <!-- Background Overlay -->
+  <div class="web-overlay"></div>
+
+  <!-- Page Heading -->
+  <header>
+    <h1>🕷️ Spider-Verse Mission Control</h1>
+    <p>
+      Across the multiverse, countless missions await coordination.  
+      Your task is to organize these Spider-Verse operations in the right sequence.  
+      Precision and order keep every hero one step ahead.
+    </p>
+  </header>
+
+  <!-- Content Section -->
+  <section class="main-section">
+    <!-- Left: Spider-Man Image -->
+    <div class="left-side">
+      <img src="./images/spidey.png" alt="Spider-Man" class="spiderman-img" />
+    </div>
+
+    <!-- Right: Mission Reorder -->
+    <div class="right-side">
+      <main class="container" id="list-container">
+        <h2>🧩 Mission Priority</h2>
+        <p>Reorder the missions below by dragging them into your preferred priority sequence.</p>
+
+        <!-- Create 5 multiple draggable items -->
+        <!-- Each mission should be inside a <div> with class="item" and attribute draggable="true" -->
+        <!-- These will be rearranged by the user via JavaScript -->
+
+        <div class="item" draggable="true">Conduct City Surveillance</div>
+        <div class="item" draggable="true">Support Dr. Conners’ Research</div>
+        <div class="item" draggable="true">Attend Midtown Science Lectures</div>
+        <div class="item" draggable="true">Mentor Miles Morales</div>
+        <div class="item" draggable="true">Neutralize Electro’s Energy Surge</div>
+        
+      </main>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Spider-Verse Labs | Developed by Chef</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
